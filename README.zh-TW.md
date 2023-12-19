@@ -210,3 +210,16 @@ LangChain 填補了 ChatGPT 的不足之處。通過以下示例，您可以理�
     ```
 
 <a href="#top">Back to top</a>
+
+
+啊伟哥运行后报错内容如下：
+
+https://docgpt-app.streamlit.app/
+
+ModuleNotFoundError: This app has encountered an error. The original error message is redacted to prevent data leaks. Full error details have been recorded in the logs (if you're on Streamlit Cloud, click on 'Manage app' in the lower right of your app).
+
+Traceback: File "/home/adminuser/venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 552, in _run_script exec(code, module.dict) File "/mount/src/docgpt-streamlit/app.py", line 10, in from components import get_response, side_bar, theme, upload_and_process_document File "/mount/src/docgpt-streamlit/components/init.py", line 1, in from .sidebar import side_bar File "/mount/src/docgpt-streamlit/components/sidebar.py", line 6, in from docGPT import GPT4Free File "/mount/src/docgpt-streamlit/docGPT/init.py", line 10, in from .docGPT import DocGPT, GPT4Free File "/mount/src/docgpt-streamlit/docGPT/docGPT.py", line 6, in import g4f File "/home/adminuser/venv/lib/python3.10/site-packages/g4f/init.py", line 6, in from .models import Model, ModelUtils, _all_models File "/home/adminuser/venv/lib/python3.10/site-packages/g4f/models.py", line 4, in from .Provider import BaseProvider, RetryProvider File "/home/adminuser/venv/lib/python3.10/site-packages/g4f/Provider/init.py", line 42, in from .NoowAi import NoowAi
+
+讨论微信+：yhfjmt
+
+2023.12.19
