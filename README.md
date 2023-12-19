@@ -210,4 +210,32 @@ To build a powerful docGPT model in LangChain, consider these tips to enhance pe
     ```
 
 <a href="#top">Back to top</a>
+
+
+ 啊伟哥运行后报错内容如下2023.12.19：
  
+ https://docgpt-app.streamlit.app/
+
+ 
+ ModuleNotFoundError: This app has encountered an error. The original error message is redacted to prevent data leaks. Full error details have been recorded in the logs (if you're on Streamlit Cloud, click on 'Manage app' in the lower right of your app).
+
+ 
+ Traceback:
+ File "/home/adminuser/venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 552, in _run_script
+    exec(code, module.__dict__)
+File "/mount/src/docgpt-streamlit/app.py", line 10, in <module>
+    from components import get_response, side_bar, theme, upload_and_process_document
+File "/mount/src/docgpt-streamlit/components/__init__.py", line 1, in <module>
+    from .sidebar import side_bar
+File "/mount/src/docgpt-streamlit/components/sidebar.py", line 6, in <module>
+    from docGPT import GPT4Free
+File "/mount/src/docgpt-streamlit/docGPT/__init__.py", line 10, in <module>
+    from .docGPT import DocGPT, GPT4Free
+File "/mount/src/docgpt-streamlit/docGPT/docGPT.py", line 6, in <module>
+    import g4f
+File "/home/adminuser/venv/lib/python3.10/site-packages/g4f/__init__.py", line 6, in <module>
+    from .models   import Model, ModelUtils, _all_models
+File "/home/adminuser/venv/lib/python3.10/site-packages/g4f/models.py", line 4, in <module>
+    from .Provider   import BaseProvider, RetryProvider
+File "/home/adminuser/venv/lib/python3.10/site-packages/g4f/Provider/__init__.py", line 42, in <module>
+    from .NoowAi          import NoowAi
