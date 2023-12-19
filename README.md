@@ -212,7 +212,7 @@ To build a powerful docGPT model in LangChain, consider these tips to enhance pe
 <a href="#top">Back to top</a>
 
 
- 啊伟哥运行后报错内容如下2023.12.19：
+ 啊伟哥运行后报错内容如下：
  
  https://docgpt-app.streamlit.app/
 
@@ -239,3 +239,8 @@ File "/home/adminuser/venv/lib/python3.10/site-packages/g4f/models.py", line 4, 
     from .Provider   import BaseProvider, RetryProvider
 File "/home/adminuser/venv/lib/python3.10/site-packages/g4f/Provider/__init__.py", line 42, in <module>
     from .NoowAi          import NoowAi
+
+
+讨论微信+：yhfjmt
+    
+2023.12.19
